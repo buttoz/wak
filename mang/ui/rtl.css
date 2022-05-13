@@ -1,0 +1,142 @@
+.nav-sidebar>.nav-item {
+    display: flex;
+    direction: rtl;
+    flex-direction: column;
+}
+.navbar-expand .navbar-nav{ margin-left: 0!important;}
+.nav-sidebar .nav-item>.nav-link{ padding-right: 25px;}
+.nav-sidebar .menu-is-opening>.nav-link i.right, .nav-sidebar .menu-open>.nav-link i.right{ right:11px;}
+
+
+.layout-fixed .main-sidebar{
+    left: inherit;
+    right: 0;
+}
+.sidebar-collapse .main-sidebar, .sidebar-collapse .main-sidebar::before{     margin-left: inherit;
+    /*margin-right: -250px;*/
+}
+.login-page .main-header{
+    margin-left: 20px !important;
+}
+.main-sidebar, .main-sidebar::before {
+    transition: margin-right .3s ease-in-out,width .3s ease-in-out;
+    width: 250px;
+}
+
+.main-header{ flex-direction: row-reverse; justify-content: space-between;}
+.navbar-nav{ flex-direction: row-reverse!important;}
+table, .form-control{ direction: rtl; color:#000000;}
+.nav-sidebar .nav-item>.nav-link .right{ left:10px; right:inherit!important;}
+.main-header .input-group{ flex-direction: row-reverse;}
+.content-header .container-fluid .row{ align-items: center; flex-direction: row-reverse;}
+.small-box .icon>i{ right: inherit; left: 10px;}
+.main-header .navbar-nav .user-menu a.nav-link{ display: flex; flex-direction: row-reverse;}
+.navbar-nav > .user-menu .user-image{  margin-right:0; margin-left:10px;}
+.main-header .navbar-nav .flag-icon{ float:right; top:5px; left:6px;}
+.main-header .navbar-nav a.nav-link::after{ float: left; top: 10px;
+    position: relative;}
+
+div.dataTables_wrapper div.dataTables_filter label{ display: flex; float: left; position:relative; }
+div.dataTables_wrapper div.dataTables_filter label::before{content:":"; position:absolute; right:54px; top:0; font-size: 16px; font-weight: 500;}
+div.dataTables_wrapper div.dataTables_filter label::after{content:""; position:absolute; width:5px; height:20px; background:#fff; right:-2px; top:0;}
+div.dataTables_wrapper div.dataTables_filter input{ margin-right:30px;}@media (max-width: 767px){
+    div.dataTables_wrapper div.dataTables_filter label{ margin-right: 29%;}
+}
+
+.card-title{ float:right;}
+.cat-file-upload .file-select-button{ float:right;}
+#categorymanage .form-group input[type="submit"]{ float:right!important;}
+#categorymanage .form-group a#reset{ float:left!important;}
+div.dataTables_wrapper div.dataTables_paginate ul.pagination{ direction: rtl;  float: right;}
+
+.form-btn-reverse{
+    flex-direction:  unset !important;
+}
+.image-upload-area {
+    flex-direction: row-reverse;
+}
+.draft-view{
+    direction: rtl;
+}
+.settingsave{
+    direction: rtl;
+    float: right;
+}
+.image-upload-area{ float:right; margin-bottom:20px;}
+.drtl{
+    direction: rtl !important;
+}
+.file-select{
+    margin-right: unset !important;
+    margin-left: 25px;
+}
+.tick-validate{ right: inherit!important; left: 10px;}
+
+div#category_info, .dataTables_info {
+    float: left;
+}
+div#example1_info {
+    float: left;
+}
+.category-area{ direction: rtl;}
+.product-image input#catfile, .product-image input#multifile{
+    left: 0;
+}
+.newproduct.newuser a{ height:36px;}
+.newproduct.newuser select{ height:36px; padding:2px 5px;}
+
+.cat-file-upload{ overflow:hidden;}
+
+@media (min-width: 991px){
+    .newuser {
+        width: 169px !important;
+    }
+}
+@media (min-width: 992px){
+    .sidebar-mini.sidebar-collapse .content-wrapper, .sidebar-mini.sidebar-collapse .main-header, .sidebar-mini.sidebar-collapse .main-footer{ margin-right: 4.6rem!important; margin-left:0!important;}
+}
+@media (max-width: 991px){
+    .sidebar-collapse .main-sidebar, .sidebar-collapse .main-sidebar::before{ margin-right: -250px;}
+    .content-wrapper, .main-header, .main-footer{ margin-right:0!important;}
+}
+
+@media (min-width: 768px){
+    .content-wrapper, .main-header, .main-footer{ margin-left:0px!important; margin-right:250px; transition: margin-right .3s ease-in-out!important;}
+
+}
+@media (max-width: 767px){
+    div.dataTables_wrapper div.dataTables_filter label{ margin-right: 29%;}
+    .newuser{ width:26%!important;}
+    .dt-buttons.btn-group.flex-wrap{ width:auto!important;}
+    .dt-buttons.btn-group.flex-wrap{ left:183px!important;}
+    div.dataTables_wrapper div.dataTables_filter label{ margin-right: 29%;}
+    .newuser a{ padding-left:5px!important; padding-right:5px!important;}
+}
+
+@media (max-width: 600px){
+    #example1_wrapper .btn-group button{ padding: 7px 7px!important;}
+    .newuser { width: 35%!important;}
+}
+@media (max-width: 480px){
+    .newuser { width: 100%!important;}
+    .dt-buttons.btn-group.flex-wrap{ width: 100%!important;}
+    #example1_wrapper .btn-group button{ margin-bottom:5px!important;}
+    div.dataTables_wrapper div.dataTables_filter label{ margin-right:0;}
+}
+@media (max-width: 360px) {
+    #example1_wrapper input[type="search"]{ width:153px;}
+    #category_wrapper .btn-group button{ margin-bottom:5px!important;}
+    #category_filter input[type="search"]{ width:135px!important;}
+}
+#products_wrapper .dt-buttons.btn-group.flex-wrap{ right:-52px!important;}
+#products_wrapper .dt-buttons.btn-group.flex-wrap button{ margin-bottom:5px!important;}
+
+.product-image input#catfile, .product-image input#multifile{
+    left: 0;
+}
+.nav-tabs{ direction: rtl;}
+.modal-header{ direction: rtl;}
+.form-control{ text-align: right;}
+.removeattach{ right: inherit;}
+#sinvattachment{ width:90px;}
+input#fileattach{ left: inherit; right: 115px; bottom:80px;}
