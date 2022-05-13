@@ -1,8 +1,6 @@
 <?php
 session_start();
 require_once './mang/config/db/config.php';
-require_once './mang/api/ip/class-ip.php';
-$token = bin2hex(openssl_random_pseudo_bytes(16));
 include('./mang/languages/lang_config.php');
 $db = getDbInstance();
 $db->where("setting_name", 'change_language');
@@ -40,7 +38,7 @@ if (isset($_COOKIE['series_id']) && isset($_COOKIE['remember_token'])) {
       }
 
       $_SESSION['user_logged_in'] = TRUE;
-      $_SESSION['user_id'] = $row[0]['id'];
+      $_SESSION['client_id'] = $row[0]['id'];
       $_SESSION['admin_type'] = $row['u_userrole'];
       header('Location: ./mang/index.php');
       exit;
@@ -55,7 +53,6 @@ if (isset($_COOKIE['series_id']) && isset($_COOKIE['remember_token'])) {
     exit;
   }
 }
-
 
 ?>
 

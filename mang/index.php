@@ -6,7 +6,7 @@ require_once './inc/helpers.php';
 
 //var_dump(preg_match('/\bindex\b/', CURRENT_PAGE));
 $db = getDbInstance();
-$db->where("id", $_SESSION['user_id']);
+$db->where("id", $_SESSION['client_id']);
 $user = $db->getOne("users");
 if ($user) {
     $first_name = $user['u_firstname'];
